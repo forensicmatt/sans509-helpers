@@ -68,7 +68,6 @@ def main():
     entries = parser.read_files(source_folder)
     for entry in entries:
         entry_dict = classic_load_balancer_to_dict(entry)
-        entry_dict["ips"] = [entry_dict["client"]["ip"], entry_dict["target"]["ip"]]
         print(json.dumps(entry_dict))
 
 
