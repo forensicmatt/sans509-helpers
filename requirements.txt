@@ -1,0 +1,1 @@
+aws-log-parser==2.2.1
